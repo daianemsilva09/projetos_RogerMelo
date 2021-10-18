@@ -12,10 +12,10 @@ form.addEventListener('submit', event =>{
     //pegar os dados inseridos na pagina / trim(pega variavel do inicio e fim e tira)
     const searchTerm = searchInput.value.trim() 
     //9:10 teste  
-    if (!searchInput){
-        
+    if (!searchTerm){
+       songsContainer.innerHTML = `<li class="warning-message">Por favor, digite um termo válido </li>`
     }
 
-    console.log(searchTerm)
+    
 
 })
